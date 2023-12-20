@@ -60,8 +60,7 @@ function Transpalette() {
       <div
         className={
           "w-full h-[100vh] bg-[url(/assets/Vente/Transpalette/99_768x400_toyota_mh.jpg)] bg-cover bg-blend-darken bg-[5px] mb-5"
-        }
-      >
+        }>
         <div className="w-full h-full flex flex-col items-center justify-center bg-primaryAmbsi/50 backdrop-brightness-75 gap-2">
           <span className={"w-[100px] h-2 bg-secondaryAmbsi "}></span>
           <h1 className={"text-white text-3xl"}>Transpalette Manuel</h1>
@@ -96,8 +95,7 @@ export const Card = ({ data }: { data: IData }) => {
   return (
     <div
       key={`${data.id}_info`}
-      className="w-[500px] max-h-[400px] border-gray-300/40 border-2 rounded-sm flex flex-row "
-    >
+      className="w-[500px] max-h-[400px] border-gray-300/40 border-2 rounded-sm flex flex-row ">
       <div className={`w-full h-[200px] relative`}>
         <Image
           src={`/assets/Vente/Transpalette/elect${data.Img}`}

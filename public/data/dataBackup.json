@@ -1578,32 +1578,11 @@
     "Ciseaux": {
       "electrique": [
         {
-          "id": "ciseau1",
-          "type": "JLG",
-          "Info": ["ES1330L", "5.80m", "227kg"],
-          "Designation": "",
-          "Img": ["/Nacelle/ciseaux/electrique/ciseaux1.png"]
-        },
-        {
-          "id": "ciseau2",
-          "type": "JLG",
-          "Info": ["ES1530L", "6.50m", "227kg"],
-          "Designation": "",
-          "Img": ["/Nacelle/ciseaux/electrique/ciseaux2.png"]
-        },
-        {
           "id": "ciseau3",
           "type": "JLG",
           "Info": ["ES1932", "7.80m", "230kg"],
           "Designation": "",
           "Img": ["/Nacelle/ciseaux/electrique/ciseaux3.png"]
-        },
-        {
-          "id": "ciseau4",
-          "type": "JLG",
-          "Info": ["ES2632", "9.75m", "230kg"],
-          "Designation": "",
-          "Img": ["/Nacelle/ciseaux/electrique/ciseaux4.png"]
         },
         {
           "id": "ciseau5",
@@ -1811,21 +1790,21 @@
           "type": "JLG",
           "Info": ["E600J", "20.36m", "230kg"],
           "Designation": "",
-          "Img": ["/Nacelle/Telescopiques/electrique/telescopique1.png"]
+          "Img": ["/Nacelle/Telescopiques/electrique/electrique1.png"]
         },
         {
           "id": "telescopique2",
           "type": "JLG",
           "Info": ["M600J", "20.36m", "230kg"],
           "Designation": "",
-          "Img": ["/Nacelle/Telescopiques/electrique/telescopique2.png"]
+          "Img": ["/Nacelle/Telescopiques/electrique/electrique2.png"]
         },
         {
           "id": "telescopique3",
           "type": "JLG",
           "Info": ["M600J", "20.39m", "230kg"],
           "Designation": "",
-          "Img": ["/Nacelle/Telescopiques/electrique/telescopique3.jpg"]
+          "Img": ["/Nacelle/Telescopiques/electrique/electrique3.jpg"]
         }
       ]
     },

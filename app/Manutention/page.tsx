@@ -2,7 +2,7 @@
 import { IData } from "@/CombineType";
 import { CardSlide } from "@/Components/Slider";
 import { Button } from "@/Components/ui/button";
-import { conbineSearch, searchOccurenceBig } from "@/Utils/SearchFunction";
+import { searchOccurenceBig } from "@/Utils/SearchFunction";
 import { useRouter } from "next/navigation";
 
 export default function Manutention() {
@@ -66,27 +66,6 @@ export default function Manutention() {
           <CardSlide key={1} Data={chariotTelescopiques} type="" />
         </div>
       </div>
-      {/* Les Grues */}
-      <div className="w-full bg-primaryAmbsi/80 py-10 flex flex-row items-center justify-center max-h-[400px] overflow-hidden">
-        <div className="w-[70%] h-[400px] bg-[url(/assets/manutentionAssets/liebherr-ltm-1040-2-1-picture-gallery01_imgxlcampaignslider.jpg)] bg-cover clip-polygone"></div>
-        <div className="w-1/2 h-full flex flex-col gap-5 px-2">
-          <p className="text-white font-semibold text-xl line-clamp-3">
-            La gamme de grues mobiles répond à une variété de besoins en matière
-            de levage. Les modèles de 30 tonnes offrent une puissance robuste,
-            tandis que ceux de 100 tonnes démontrent une performance
-            exceptionnelle. Ces grues fournissent des solutions de levage
-            fiables et efficaces, conçues avec une attention particulière pour
-            une maniabilité optimale et une sécurité maximale sur tous les
-            chantiers.
-          </p>
-          <Button
-            variant={"Ambsi"}
-            className="text-white w-1/2"
-            onClick={redirectToGrue}>
-            Voirs plus
-          </Button>
-        </div>
-      </div>
 
       {/* Chariot telscopique rotaif */}
       <div className="w-full bg-zinc-300/40">
@@ -110,6 +89,27 @@ export default function Manutention() {
             Data={chariotElvateurElectrique}
             type="electrique"
           />
+        </div>
+        {/* Les Grues */}
+        <div className="w-full bg-[#636363]/80 py-10 flex flex-row items-center justify-center max-h-[400px] overflow-hidden">
+          <div className="w-[70%] h-[400px] bg-[url(/assets/manutentionAssets/liebherr-ltm-1040-2-1-picture-gallery01_imgxlcampaignslider.jpg)] bg-cover clip-polygone"></div>
+          <div className="w-1/2 h-full flex flex-col gap-5 px-2">
+            <p className="text-white font-semibold text-xl line-clamp-3">
+              La gamme de grues mobiles répond à une variété de besoins en
+              matière de levage. Les modèles de 30 tonnes offrent une puissance
+              robuste, tandis que ceux de 100 tonnes démontrent une performance
+              exceptionnelle. Ces grues fournissent des solutions de levage
+              fiables et efficaces, conçues avec une attention particulière pour
+              une maniabilité optimale et une sécurité maximale sur tous les
+              chantiers.
+            </p>
+            <Button
+              variant={"Ambsi"}
+              className="text-white w-1/2"
+              onClick={redirectToGrue}>
+              Voirs plus
+            </Button>
+          </div>
         </div>
       </div>
     </section>

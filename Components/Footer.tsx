@@ -20,13 +20,13 @@ export const Footer = () => {
             Acceuill
           </li>
           <li className="text-white cursor-pointer hover:text-secondaryAmbsi active:text-secondaryAmbsi/70">
-            Elvation
+            Levage
           </li>
           <li className="text-white cursor-pointer hover:text-secondaryAmbsi active:text-secondaryAmbsi/70">
             Manutention
           </li>
           <li className="text-white cursor-pointer hover:text-secondaryAmbsi active:text-secondaryAmbsi/70">
-            Batiment et traveaux public
+            Bâtiment et travaux publics
           </li>
         </ul>
       </div>

@@ -1,4 +1,5 @@
 import data from "@/public/data/dataBackup.json";
+import queryString from "query-string";
 // searching if this item is valid
 export const searchOccurnece = (searchCible, CibleRoute = false) => {
   let searchResults = [];
@@ -66,4 +67,72 @@ export const conbineSearch = (MainCategory, categorie) => {
     allData.push(elem);
   });
   return allData;
+};
+
+export const SearchProduct = (searchCible, cat) => {
+  let resuSearch = [];
+  if (searchCible == undefined || cat == undefined) {
+    searchCible = "ELPT terminal";
+    cat = "Batteries,Chargers";
+  }
+  // the case if the searching cat is not a chariot or nacelle
+  const ElectricalDiselProduct = ["Nacelle", "Chariot"];
+  if (!ElectricalDiselProduct.includes(cat)) {
+    Object.keys(data[cat]).forEach((seconCat) => {
+      data[cat][seconCat].map((elem) => {
+        elem["Info"].map((elemSerach) => {
+          if (elemSerach.search(searchCible) != -1) {
+            elem["search"] = cat;
+            elem["secondSearch"] = seconCat;
+            resuSearch.push(elem);
+          }
+        });
+      });
+    });
+  } else {
+    Object.keys(data[cat]).forEach((seconCat) => {
+      if (
+        Object.keys(data[cat][seconCat]).includes("diesel") == false ||
+        !Object.keys(data[cat][seconCat]).includes("electriques") == false
+      ) {
+        Object.keys(data[cat][seconCat]).map((thirthCat) => {
+          data[cat][seconCat][thirthCat].map((elem) => {
+            elem["Info"].map((elemSerach) => {
+              if (elemSerach.search(searchCible) != -1) {
+                elem["search"] = cat;
+                elem["secondSearch"] = seconCat;
+                resuSearch.push(elem);
+              }
+            });
+          });
+        });
+      } else {
+        Object.keys(data[cat][seconCat]).map((type) => {
+          data[cat][seconCat][type].map((elem) => {
+            elem["Info"].map((elemSerach) => {
+              if (elemSerach.search(searchCible) != -1) {
+                elem["search"] = cat;
+                elem["secondSearch"] = seconCat;
+                resuSearch.push(elem);
+              }
+            });
+          });
+        });
+      }
+    });
+  }
+
+  return resuSearch;
+};
+
+export const serachFromPath = (id, cat, subCat, type = "none type") => {
+  if (type == "none type") {
+    data[cat][subCat].map((elem) => {
+      if (elem["id"] == id) return elem;
+    });
+  } else {
+    data[cat][subCat][type].map((elem) => {
+      if (elem["id"] == id) return elem;
+    });
+  }
 };
