@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AMBS Company Website
 
-## Getting Started
+This project is a company website for AMBS, built with Next.js and styled using Tailwind CSS.
 
-First, run the development server:
+## Table of Contents
+
+- [AMBS Company Website](#ambs-company-website)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Features](#features)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Development Server](#development-server)
+    - [Production Build](#production-build)
+  - [Folder Structure](#folder-structure)
+  - [Contributing](#contributing)
+  - [License](#license)
+
+## Overview
+
+The AMBS Company Website is a modern and responsive website built using Next.js, a React framework, and styled with Tailwind CSS. It showcases information about the company, its services, and contact details.
+
+## Features
+
+- Responsive design for various screen sizes.
+- Dynamic content rendering using Next.js.
+- Stylish and customizable UI components with Tailwind CSS.
+- Contact form for user inquiries.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/ambs-company-website.git
+   ```
+
+2. Change into the project directory:
+
+   ```bash
+   cd ambs-company-website
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+### Development Server
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to view the website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Create a production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Visit [http://localhost:3000](http://localhost:3000) to view the optimized production build.
 
-## Deploy on Vercel
+## Folder Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `components/`: React components.
+- `pages/`: Next.js pages.
+- `styles/`: Stylesheets, including Tailwind CSS.
+- `public/`: Public assets.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
+
+Contributions are welcome! Feel free to open issues and pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
